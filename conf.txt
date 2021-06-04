@@ -1,0 +1,236 @@
+OLD BUILDING
+
+swA:
+
+conf t
+int f0/0
+no shutdown
+ip address 192.168.10.10 255.255.255.0
+ip ospf 20 area 0
+exit
+int f0/1
+no shutdown
+ip address 192.168.200.10 255.255.255.0
+ip ospf 20 area 0
+exit
+int vlan 1
+no shutdown
+ip address 192.168.100.10 255.255.252.0
+ip ospf 20 area 0
+exit
+int 1/14
+no shutdown
+switchport mode trunk
+switchport trunk encapsulation dot1q
+exit
+int 1/15
+no shutdown
+switchport mode trunk
+switchport trunk encapsulation dot1q
+end 
+wr 
+
+swB:
+
+conf t
+int f0/0
+no shutdown
+ip address 192.168.11.11 255.255.255.0
+ip ospf 20 area 0
+exit
+int f0/1
+no shutdown
+ip address 192.168.200.11 255.255.255.0
+ip ospf 20 area 0
+exit
+int vlan 1
+no shutdown
+ip address 192.168.100.11 255.255.252.0
+ip ospf 20 area 0
+exit
+int 1/14
+no shutdown
+switchport mode trunk
+switchport trunk encapsulation dot1q
+exit
+int 1/15
+no shutdown
+switchport mode trunk
+switchport trunk encapsulation dot1q
+end 
+wr 
+
+
+______________________Zone1____________________
+VC_AD1:
+
+ip 10.1.0.5 255.255.255.0 10.1.0.1
+save
+
+PC_AD1:
+
+ip 10.3.0.5 255.255.255.0 10.3.0.1
+save
+
+
+Z1_AdminWifi:
+
+ip 10.8.2.5 255.255.255.0 10.8.2.1
+save
+
+Zone1_EWS1:
+
+conf t
+ipv6 unicast-routing
+ip routing
+
+int vlan 2
+no shutdown
+ip address 10.1.0.1 255.255.255.0
+no autostate
+ip opsf 1 area 0
+exit
+
+int vlan 3
+no shutdown
+ip address 10.3.0.1 255.255.255.0
+no autostate
+ip opsf 1 area 0
+exit
+
+int vlan 8
+no shutdown
+ip address 10.8.2.1 255.255.255.0
+no autostate
+ip opsf 1 area 0
+exit
+
+int 1/15
+switchport mode trunk
+switchport trunk encapsulation dot1q 
+no shutdown
+end
+wr
+
+Zone1_EWS2:
+
+conf t
+ipv6 unicast-routing
+ip routing
+
+int vlan 2
+no shutdown
+ip address 10.1.0.2 255.255.255.0
+no autostate
+ip opsf 1 area 0
+exit
+
+int vlan 3
+no shutdown
+ip address 10.3.0.2 255.255.255.0
+no autostate
+ip opsf 1 area 0
+exit
+
+int vlan 8
+no shutdown
+ip address 10.8.2.2 255.255.255.0
+no autostate
+ip opsf 1 area 0
+exit
+
+int 1/15
+switchport mode trunk
+switchport trunk encapsulation dot1q 
+no shutdown
+end
+wr
+
+
+
+
+______________________Zone2____________________
+
+VC_AD2:
+
+ip 10.1.1.5 255.255.255.0 10.1.1.3
+save
+
+PC_AD2:
+
+ip 10.3.1.5 255.255.255.0 10.3.1.3
+save
+
+Z2_AdminWifi:
+
+ip 10.8.2.6 255.255.255.0 10.8.2.3
+save
+
+Zone2_EWS1:
+
+conf t
+ipv6 unicast-routing
+ip routing
+
+int vlan 4
+no shutdown
+ip address 10.1.1.3 255.255.255.0
+no autostate
+ip opsf 1 area 0
+exit
+
+int vlan 5
+no shutdown
+ip address 10.3.1.3 255.255.255.0
+no autostate
+ip opsf 1 area 0
+exit
+
+int vlan 8
+no shutdown
+ip address 10.8.2.3 255.255.255.0
+no autostate
+ip opsf 1 area 0
+exit
+
+int 1/15
+switchport mode trunk
+switchport trunk encapsulation dot1q 
+no shutdown
+end
+wr
+
+Zone2_EWS2:
+
+conf t
+ipv6 unicast-routing
+ip routing
+
+int vlan 4
+no shutdown
+ip address 10.1.1.4 255.255.255.0
+no autostate
+ip opsf 1 area 0
+exit
+
+int vlan 5
+no shutdown
+ip address 10.3.1.4 255.255.255.0
+no autostate
+ip opsf 1 area 0
+exit
+
+int vlan 8
+no shutdown
+ip address 10.8.2.4 255.255.255.0
+no autostate
+ip opsf 1 area 0
+exit
+
+int 1/15
+switchport mode trunk
+switchport trunk encapsulation dot1q 
+no shutdown
+end
+wr
+

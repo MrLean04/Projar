@@ -1,0 +1,2 @@
+set pcname Z2_AdminWifi
+ip 10.8.2.6 10.8.2.3 24

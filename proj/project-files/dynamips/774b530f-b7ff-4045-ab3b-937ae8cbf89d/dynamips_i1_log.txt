@@ -1,0 +1,45 @@
+Jun 04 16:44:24.590 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jun 04 16:44:24.590 HYPERVISOR: Started on IP = localhost, TCP port = 53557.
+Jun 04 16:44:24.721 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 04 16:44:24.721 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Leand\Documents\UA\3ano\AR\Projar\proj\project-files\dynamips 
+Jun 04 16:44:24.721 GENERAL: working_dir=C:\Users\Leand\Documents\UA\3ano\AR\Projar\proj\project-files\dynamips
+Jun 04 16:44:24.721 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Leand\Documents\UA\3ano\AR\Projar\proj\project-files\dynamips\3b021c93-f7d8-4741-8dae-f4cd4f331181 
+Jun 04 16:44:24.721 GENERAL: working_dir=C:\Users\Leand\Documents\UA\3ano\AR\Projar\proj\project-files\dynamips\3b021c93-f7d8-4741-8dae-f4cd4f331181
+Jun 04 16:44:24.721 HYPERVISOR: exec_cmd: vm create ISP_TP1 3 c7200 
+Jun 04 16:44:24.721 VM: VM ISP_TP1 created.
+Jun 04 16:44:24.721 HYPERVISOR: exec_cmd: vm set_con_tcp_port ISP_TP1 5002 
+Jun 04 16:44:24.721 HYPERVISOR: exec_cmd: c7200 get_mac_addr ISP_TP1 
+Jun 04 16:44:24.721 HYPERVISOR: exec_cmd: vm get_status ISP_TP1 
+Jun 04 16:44:24.721 HYPERVISOR: exec_cmd: vm slot_add_binding ISP_TP1 0 0 C7200-IO-FE 
+Jun 04 16:44:24.721 HYPERVISOR: exec_cmd: vm set_disk0 ISP_TP1 0 
+Jun 04 16:44:24.721 HYPERVISOR: exec_cmd: vm set_exec_area ISP_TP1 64 
+Jun 04 16:44:24.721 HYPERVISOR: exec_cmd: vm get_status ISP_TP1 
+Jun 04 16:44:24.721 HYPERVISOR: exec_cmd: vm set_idle_pc ISP_TP1 0x60608040 
+Jun 04 16:44:24.721 HYPERVISOR: exec_cmd: vm set_ios ISP_TP1 C:/Users/Leand/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Jun 04 16:44:24.721 HYPERVISOR: exec_cmd: c7200 set_mac_addr ISP_TP1 ca03.333c.0000 
+Jun 04 16:44:24.721 HYPERVISOR: exec_cmd: vm set_nvram ISP_TP1 512 
+Jun 04 16:44:24.737 HYPERVISOR: exec_cmd: vm set_ram ISP_TP1 512 
+Jun 04 16:44:24.737 HYPERVISOR: exec_cmd: vm get_status ISP_TP1 
+Jun 04 16:44:24.737 HYPERVISOR: exec_cmd: vm slot_remove_binding ISP_TP1 0 0 
+Jun 04 16:44:24.737 HYPERVISOR: exec_cmd: vm get_status ISP_TP1 
+Jun 04 16:44:24.737 HYPERVISOR: exec_cmd: vm slot_add_binding ISP_TP1 0 0 C7200-IO-2FE 
+Jun 04 16:44:24.737 HYPERVISOR: exec_cmd: vm get_status ISP_TP1 
+Jun 04 16:44:24.737 HYPERVISOR: exec_cmd: vm slot_add_binding ISP_TP1 1 0 PA-2FE-TX 
+Jun 04 16:44:35.376 HYPERVISOR: exec_cmd: nio create_udp udp-b89504a5-1796-4cbe-81f7-4e7bf3df0cc5 10002 127.0.0.1 10003 
+Jun 04 16:44:35.712 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP_TP1 0 1 udp-b89504a5-1796-4cbe-81f7-4e7bf3df0cc5 
+Jun 04 16:44:35.712 HYPERVISOR: exec_cmd: vm get_status ISP_TP1 
+Jun 04 16:44:36.155 HYPERVISOR: exec_cmd: nio create_udp udp-0f8e83a3-5999-47e9-86db-1b09d5a17ac3 10010 127.0.0.1 10011 
+Jun 04 16:44:36.157 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP_TP1 1 0 udp-0f8e83a3-5999-47e9-86db-1b09d5a17ac3 
+Jun 04 16:44:36.157 HYPERVISOR: exec_cmd: vm get_status ISP_TP1 
+Jun 04 16:44:43.342 HYPERVISOR: exec_cmd: nio create_udp udp-0e188a72-74f7-4772-8b7f-9d64fca2f407 10194 127.0.0.1 10195 
+Jun 04 16:44:43.344 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP_TP1 0 0 udp-0e188a72-74f7-4772-8b7f-9d64fca2f407 
+Jun 04 16:44:43.344 HYPERVISOR: exec_cmd: vm get_status ISP_TP1 
+Jun 04 16:45:09.765 HYPERVISOR: exec_cmd: vm get_status ISP_TP1 
+Jun 04 16:45:09.765 HYPERVISOR: exec_cmd: vm extract_config ISP_TP1 
+Jun 04 16:45:09.919 HYPERVISOR: exec_cmd: vm get_status ISP_TP1 
+Jun 04 16:45:09.919 HYPERVISOR: exec_cmd: vm extract_config ISP_TP1 
+Jun 04 16:45:09.919 HYPERVISOR: exec_cmd: vm delete ISP_TP1 
+Jun 04 16:45:09.919 VM: VM ISP_TP1 destroyed.
+Jun 04 16:45:09.919 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 04 16:45:10.151 HYPERVISOR: Stopped.
+Jun 04 16:45:10.151 GENERAL: reset done.
