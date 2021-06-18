@@ -1,2 +1,3 @@
 set pcname Z1_AdminWifi
 ip 10.8.2.5 10.8.2.1 24
+ip 3100:a:a:802::1/64
