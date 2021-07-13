@@ -1,0 +1,40 @@
+Jun 22 13:38:31.218 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jun 22 13:38:31.218 HYPERVISOR: Started on IP = localhost, TCP port = 55927.
+Jun 22 13:38:31.223 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 22 13:38:31.223 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Leand\Documents\UA\3ano\AR\Projar\proj\project-files\dynamips 
+Jun 22 13:38:31.223 GENERAL: working_dir=C:\Users\Leand\Documents\UA\3ano\AR\Projar\proj\project-files\dynamips
+Jun 22 13:38:31.223 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Leand\Documents\UA\3ano\AR\Projar\proj\project-files\dynamips\c62c99e3-bc48-4901-aa81-9da8a92e7200 
+Jun 22 13:38:31.223 GENERAL: working_dir=C:\Users\Leand\Documents\UA\3ano\AR\Projar\proj\project-files\dynamips\c62c99e3-bc48-4901-aa81-9da8a92e7200
+Jun 22 13:38:31.223 HYPERVISOR: exec_cmd: vm create ZONE2_ESW1 7 c3725 
+Jun 22 13:38:31.223 VM: VM ZONE2_ESW1 created.
+Jun 22 13:38:31.223 HYPERVISOR: exec_cmd: vm set_con_tcp_port ZONE2_ESW1 5006 
+Jun 22 13:38:31.223 HYPERVISOR: exec_cmd: c3725 get_mac_addr ZONE2_ESW1 
+Jun 22 13:38:31.223 HYPERVISOR: exec_cmd: vm set_disk0 ZONE2_ESW1 1 
+Jun 22 13:38:31.223 HYPERVISOR: exec_cmd: vm set_exec_area ZONE2_ESW1 64 
+Jun 22 13:38:31.223 HYPERVISOR: exec_cmd: vm get_status ZONE2_ESW1 
+Jun 22 13:38:31.223 HYPERVISOR: exec_cmd: vm set_idle_pc ZONE2_ESW1 0x60236160 
+Jun 22 13:38:31.223 HYPERVISOR: exec_cmd: vm set_ios ZONE2_ESW1 C:/Users/Leand/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jun 22 13:38:31.223 HYPERVISOR: exec_cmd: c3725 set_mac_addr ZONE2_ESW1 c207.43b8.0000 
+Jun 22 13:38:31.223 HYPERVISOR: exec_cmd: vm set_nvram ZONE2_ESW1 256 
+Jun 22 13:38:31.223 HYPERVISOR: exec_cmd: vm get_status ZONE2_ESW1 
+Jun 22 13:38:31.223 HYPERVISOR: exec_cmd: vm slot_add_binding ZONE2_ESW1 1 0 NM-16ESW 
+Jun 22 13:38:44.132 HYPERVISOR: exec_cmd: nio create_udp udp-b728248a-f388-4b50-9695-bc6e29a4c4d1 10026 127.0.0.1 10027 
+Jun 22 13:38:44.380 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ZONE2_ESW1 0 0 udp-b728248a-f388-4b50-9695-bc6e29a4c4d1 
+Jun 22 13:38:44.380 HYPERVISOR: exec_cmd: vm get_status ZONE2_ESW1 
+Jun 22 13:38:46.641 HYPERVISOR: exec_cmd: nio create_udp udp-46fb5ee9-3963-41ee-86cc-c2058ca0ab20 10074 127.0.0.1 10075 
+Jun 22 13:38:46.684 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ZONE2_ESW1 1 0 udp-46fb5ee9-3963-41ee-86cc-c2058ca0ab20 
+Jun 22 13:38:46.684 HYPERVISOR: exec_cmd: vm get_status ZONE2_ESW1 
+Jun 22 13:38:46.778 HYPERVISOR: exec_cmd: nio create_udp udp-32ecda71-3af5-49ff-856f-d2d130b00b1a 10080 127.0.0.1 10081 
+Jun 22 13:38:46.778 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ZONE2_ESW1 1 1 udp-32ecda71-3af5-49ff-856f-d2d130b00b1a 
+Jun 22 13:38:46.778 HYPERVISOR: exec_cmd: vm get_status ZONE2_ESW1 
+Jun 22 13:38:48.285 HYPERVISOR: exec_cmd: nio create_udp udp-eb6595df-4b00-43d9-a7cc-3255f86ec8f4 10126 127.0.0.1 10127 
+Jun 22 13:38:48.289 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ZONE2_ESW1 1 15 udp-eb6595df-4b00-43d9-a7cc-3255f86ec8f4 
+Jun 22 13:38:48.289 HYPERVISOR: exec_cmd: vm get_status ZONE2_ESW1 
+Jun 22 13:38:50.654 HYPERVISOR: exec_cmd: nio create_udp udp-59ef8308-8820-4c89-9a6c-7e39407c8bef 10192 127.0.0.1 10193 
+Jun 22 13:38:50.654 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ZONE2_ESW1 1 13 udp-59ef8308-8820-4c89-9a6c-7e39407c8bef 
+Jun 22 13:38:50.654 HYPERVISOR: exec_cmd: vm get_status ZONE2_ESW1 
+Jun 22 13:39:03.688 HYPERVISOR: exec_cmd: vm set_ghost_status ZONE2_ESW1 2 
+Jun 22 13:39:03.688 HYPERVISOR: exec_cmd: vm set_ghost_file ZONE2_ESW1 C:\Users\Leand\Documents\UA\3ano\AR\Projar\proj\project-files\dynamips\c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Jun 22 13:39:03.688 HYPERVISOR: exec_cmd: vm get_status ZONE2_ESW1 
+Jun 22 13:39:03.688 HYPERVISOR: exec_cmd: vm set_config ZONE2_ESW1 configs\i7_startup-config.cfg 
+Jun 22 13:39:03.688 HYPERVISOR: exec_cmd: vm start ZONE2_ESW1 
